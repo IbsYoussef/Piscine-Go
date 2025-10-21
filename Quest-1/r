@@ -1,0 +1,33 @@
+// Exercise: cl-camp2
+//
+// Required:
+// Create a file named 'r' that shows the letter "R" on a line when viewed
+// using the 'cat' command.
+//
+// Problem summary:
+// This exercise demonstrates understanding of how text files represent lines
+// and how newline characters (\n) affect command-line output.
+//
+// Explanation:
+// - The first line of this file contains only the character R followed by
+//   a newline (the invisible \n character at the end of the line).
+// - When you use 'cat r', it displays:
+//     R
+//   showing the single character and then moving to a new line.
+// - When you use 'cat -e r', it reveals the newline by displaying:
+//     R$
+//
+// What happens with echo:
+// - Running 'echo "R" > r' writes the character R followed by a newline
+//   into the file r.
+// - The '>' symbol redirects the printed output into the file, replacing
+//   any previous content.
+// - Therefore, the resulting file contains exactly:
+//     R\n
+//   which matches the required output.
+//
+// Example output:
+// $ cat -e r
+// R$
+
+R
