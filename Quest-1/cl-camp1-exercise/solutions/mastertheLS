@@ -1,0 +1,17 @@
+# Commands: ls, xargs, sed
+# Lists files with specific formatting
+#
+# Breakdown:
+# ls -F -t
+#   -F: appends '/' to directories, '*' to executables
+#   -t: sorts by modification time (newest first)
+#
+# | xargs echo
+#   joins all lines into a single line separated by spaces
+#
+# | sed 's/ /,/g'
+#   replaces all spaces with commas
+#
+# Note: ls without -a automatically excludes hidden files (. and ..)
+
+ls -F -t | xargs echo | sed 's/ /,/g'

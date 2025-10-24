@@ -1,0 +1,8 @@
+# TODO: Write your code here
+# List files and directories with these requirements:
+# - Ignore hidden files
+# - Comma-separated output
+# - Sort by time (newest first)
+# - Add '/' to directory names
+
+ls -F -t | xargs echo | sed 's/ /,/g'
