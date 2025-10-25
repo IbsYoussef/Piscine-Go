@@ -4,5 +4,3 @@
 # - Comma-separated output
 # - Sort by time (newest first)
 # - Add '/' to directory names
-
-ls -F -t | xargs echo | sed 's/ /,/g'

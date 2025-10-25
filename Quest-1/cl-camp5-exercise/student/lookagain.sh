@@ -9,5 +9,3 @@
 # - Use find with -name pattern
 # - Use basename to strip extension
 # - Use sort -r for reverse order
-
-find -name '*.sh' -exec basename {} .sh ";" | sort -r

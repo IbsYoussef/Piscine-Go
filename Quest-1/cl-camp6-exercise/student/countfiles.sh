@@ -10,5 +10,3 @@
 # - Use -or to combine conditions
 # - Use wc -l to count results
 # - Avoid double-counting special entries
-
-find . \( -type f -or -type d \) -and \( -not -path "*/." \) | wc -l

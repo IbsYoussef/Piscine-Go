@@ -5,5 +5,3 @@
 # - Files that start with 'z' AND end with 'a!'
 #
 # Hint: Use find with -name, -o (OR), and -a (AND)
-
-find -name 'a*' -o -name '*z' -o -name 'z*' -a -name '*a!'
