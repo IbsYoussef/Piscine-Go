@@ -1,0 +1,9 @@
+# TODO: Write your code here
+# Search for:
+# - Files/directories starting with 'a'
+# - Files ending with 'z'
+# - Files that start with 'z' AND end with 'a!'
+#
+# Hint: Use find with -name, -o (OR), and -a (AND)
+
+find -name 'a*' -o -name '*z' -o -name 'z*' -a -name '*a!'

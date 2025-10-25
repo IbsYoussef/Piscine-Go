@@ -1,0 +1,16 @@
+# Command: find with pattern matching
+# Searches for files/directories matching specific patterns
+#
+# Breakdown:
+# find - searches recursively from current directory
+# -name 'a*' - matches anything starting with 'a'
+# -o - logical OR operator
+# -name '*z' - matches anything ending with 'z'
+# -o - another OR
+# -name 'z*' - matches anything starting with 'z'
+# -a - logical AND operator
+# -name '*a!' - matches anything ending with 'a!'
+#
+# Logic: (starts with a) OR (ends with z) OR (starts with z AND ends with a!)
+
+find -name 'a*' -o -name '*z' -o -name 'z*' -a -name '*a!'
