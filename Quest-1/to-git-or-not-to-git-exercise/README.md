@@ -7,7 +7,6 @@
 Create a file named `to-git-or-not-to-git.sh` that retrieves and displays the name, power, and gender of the superhero whose id is 170.
 
 ## Expected Output Format
-
 ```
 Chameleon
 28
@@ -18,18 +17,18 @@ Male
 
 ## Requirements
 
-- Use GraphQL API to fetch superhero data
-- Query for superhero with id = 170
+- Fetch superhero data from JSON API
+- Filter for superhero with id = 170
 - Extract and display: name, power, gender
 - Each field on a separate line
 - **No `echo` commands allowed** (must use actual API calls)
 
 ## API Details
 
-- **Endpoint:** `https://learn.01founders.co/api/graphql-engine/v1/graphql`
-- **Method:** GraphQL query
-- **Fields needed:** name, power, gender
-- **Filter:** `id: 170`
+- **Endpoint:** `https://learn.01founders.co/assets/superhero/all.json`
+- **Method:** HTTP GET (returns JSON array)
+- **Fields needed:** name (from root), power (from powerstats object), gender (from appearance object)
+- **Filter:** Select where `id == 170`
 
 ## How to Work on This
 
@@ -41,6 +40,7 @@ Male
 ## Hints
 
 - Use `curl -s` for silent HTTP requests
-- Use `--data` to send GraphQL query
 - Use `jq` to parse JSON response
-- GraphQL query format: `{superhero(where:{id:{_eq:170}}){name power gender}}`
+- Filter with `select(.id == 170)`
+- Access nested fields: `.powerstats.power` and `.appearance.gender`
+- Use `jq -r` for raw output (no quotes)

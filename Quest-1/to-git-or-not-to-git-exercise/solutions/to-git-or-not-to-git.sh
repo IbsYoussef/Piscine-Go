@@ -1,24 +1,40 @@
 #!/bin/sh
 
 # Commands: curl, jq
-# Fetches superhero data from GraphQL API and extracts specific fields
+# Fetches superhero data from JSON API and extracts specific fields
 #
 # Breakdown:
-# curl -s - sends silent HTTP request (no progress/error messages)
-# https://... - GraphQL API endpoint
-# --data '...' - sends GraphQL query as POST data
-# 
-# GraphQL query structure:
-# {superhero(where:{id:{_eq:170}}){name power gender}}
-#   - superhero: the table/type to query
-#   - where:{id:{_eq:170}}: filter condition (id equals 170)
-#   - {name power gender}: fields to retrieve
+# curl -s https://learn.01founders.co/assets/superhero/all.json
+#   - curl: command-line tool for transferring data with URLs
+#   - -s: silent mode (no progress bar or error messages)
+#   - Returns: JSON array of all superhero objects
 #
-# | jq -r - pipes JSON response to jq for parsing
-#   -r: raw output (no quotes)
-#   '.data.superhero[]': navigates to superhero array in response
-#   '| .name, .power, .gender': extracts these three fields
-#   Each field is printed on a separate line
+# | jq -r '.[] | select(.id == 170) | .name, .powerstats.power, .appearance.gender'
+#   - jq: lightweight JSON processor
+#   - -r: raw output mode (removes quotes from strings)
+#   - .[]: iterate through each element in the JSON array
+#   - select(.id == 170): filter to only the superhero with id 170
+#   - .name: extract the name field from root object
+#   - .powerstats.power: extract power field from nested powerstats object
+#   - .appearance.gender: extract gender field from nested appearance object
+#   - Each field is printed on a separate line
+#
+# Data structure (simplified):
+# [
+#   {
+#     "id": 170,
+#     "name": "Chameleon",
+#     "powerstats": { "power": 28, ... },
+#     "appearance": { "gender": "Male", ... },
+#     ...
+#   },
+#   ...
+# ]
+#
+# Output:
+# Chameleon
+# 28
+# Male
 
 curl -s https://learn.01founders.co/assets/superhero/all.json \
 | jq -r '.[] | select(.id == 170) | .name, .powerstats.power, .appearance.gender'
