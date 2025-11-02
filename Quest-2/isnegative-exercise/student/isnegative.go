@@ -1,7 +1,5 @@
 package student
 
-import "github.com/01-edu/z01"
-
 // TODO: Write your code here
 // Implement the IsNegative function
 //
@@ -20,10 +18,4 @@ import "github.com/01-edu/z01"
 
 func IsNegative(nb int) {
 	// Your code here
-	if nb < 0 {
-		z01.PrintRune('T')
-	} else {
-		z01.PrintRune('F')
-	}
-	z01.PrintRune('\n')
 }
