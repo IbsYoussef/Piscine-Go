@@ -1,7 +1,5 @@
 package main
 
-import "github.com/01-edu/z01"
-
 // TODO: Write your code here
 // Print the lowercase alphabet (a-z) on one line
 //
@@ -16,8 +14,5 @@ import "github.com/01-edu/z01"
 // abcdefghijklmnopqrstuvwxyz
 
 func main() {
-	for i := 'a'; i <= 'z'; i++ {
-		z01.PrintRune(i)
-	}
-	z01.PrintRune('\n')
+	// Your code here
 }
