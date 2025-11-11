@@ -12,10 +12,9 @@ echo ""
 
 cat > temp_student.go << 'EOF'
 package main
-
-import "github.com/01-edu/z01"
 EOF
 
+# Copy the entire student file (including its imports)
 sed '/^package student/d' student/eightqueens.go >> temp_student.go
 
 cat >> temp_student.go << 'EOF'
@@ -27,10 +26,9 @@ EOF
 
 cat > temp_solution.go << 'EOF'
 package main
-
-import "github.com/01-edu/z01"
 EOF
 
+# Copy the entire solution file (including its imports)
 sed '/^package solutions/d' solutions/eightqueens.go >> temp_solution.go
 
 cat >> temp_solution.go << 'EOF'

@@ -1,5 +1,7 @@
 package solutions
 
+import "github.com/01-edu/z01"
+
 // Function Breakdown:
 //
 // EightQueens():
@@ -43,6 +45,53 @@ package solutions
 // Status: Bonus
 
 func EightQueens() {
-	// Your solution here
-	// Should print all 92 solutions
+	board := make([]int, 8)
+	solve(board, 0)
+}
+
+func abs(n int) int {
+	if n < 0 {
+		return -n
+	}
+	return n
+}
+
+func isSafe(board []int, row, col int) bool {
+	// Check all previously placed queens (columns 0 to col-1)
+	for prevCol := 0; prevCol < col; prevCol++ {
+		prevRow := board[prevCol]
+
+		// Check same row
+		if prevRow == row {
+			return false
+		}
+
+		// Check Diagonals
+		if abs(prevRow-row) == abs(prevCol-col) {
+			return false
+		}
+	}
+
+	return true
+}
+
+func printSolution(board []int) {
+	for _, row := range board {
+		z01.PrintRune(rune('0' + row + 1)) // Convert 0-7 to 1-8
+	}
+	z01.PrintRune('\n')
+}
+
+func solve(board []int, col int) {
+	if col == 8 {
+		printSolution(board)
+		return
+	}
+
+	for row := 0; row < 8; row++ {
+		if isSafe(board, row, col) {
+			board[col] = row
+			solve(board, col+1)
+		}
+	}
 }

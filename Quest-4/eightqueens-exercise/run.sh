@@ -8,10 +8,9 @@ echo ""
 
 cat > temp_run.go << 'EOF'
 package main
-
-import "github.com/01-edu/z01"
 EOF
 
+# Copy the entire student file (including its imports)
 sed '/^package student/d' student/eightqueens.go >> temp_run.go
 
 cat >> temp_run.go << 'EOF'
