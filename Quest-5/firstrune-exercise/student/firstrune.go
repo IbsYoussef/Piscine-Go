@@ -21,5 +21,7 @@ package student
 
 func FirstRune(s string) rune {
 	// Your code here
-	return ' '
+	runes := []rune(s)
+
+	return runes[0]
 }

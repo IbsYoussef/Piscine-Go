@@ -20,15 +20,12 @@ cat >> temp_student.go << 'EOF'
 
 func main() {
 	z01.PrintRune(FirstRune("Hello!"))
-    z01.PrintRune('\n')
 	z01.PrintRune(FirstRune("Salut!"))
-    z01.PrintRune('\n')
 	z01.PrintRune(FirstRune("Ola!"))
 	z01.PrintRune('\n')
 	z01.PrintRune(FirstRune("Go"))
-    z01.PrintRune('\n')
 	z01.PrintRune(FirstRune("Programming"))
-    z01.PrintRune('\n')
+	z01.PrintRune('\n')
 }
 EOF
 
@@ -44,15 +41,12 @@ cat >> temp_solution.go << 'EOF'
 
 func main() {
 	z01.PrintRune(FirstRune("Hello!"))
-    z01.PrintRune('\n')
 	z01.PrintRune(FirstRune("Salut!"))
-    z01.PrintRune('\n')
 	z01.PrintRune(FirstRune("Ola!"))
 	z01.PrintRune('\n')
 	z01.PrintRune(FirstRune("Go"))
-    z01.PrintRune('\n')
 	z01.PrintRune(FirstRune("Programming"))
-    z01.PrintRune('\n')
+	z01.PrintRune('\n')
 }
 EOF
 
