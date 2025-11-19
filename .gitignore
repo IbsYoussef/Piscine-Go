@@ -1,5 +1,2 @@
 # Ignore VS code settings folder
 .vscode/
-
-# Temp store folder
-/temp
