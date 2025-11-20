@@ -37,24 +37,25 @@ import (
 // Status: Required
 
 func main() {
-	fullPath := os.Args[0]
-	lastSlashIndex := -1
+	// Get the full path of program
+	args := os.Args[0]
 
 	// Find the last slash in the path
-	for i, r := range fullPath {
-		if r == '/' {
-			lastSlashIndex = i
+	slashPos := -1
+	for i, char := range args {
+		if char == '/' {
+			slashPos = i
 		}
 	}
 
-	// Extract program name (everything after last slash)
-	var programName string
-	if lastSlashIndex != -1 {
-		// Has slash: get substring after it
-		programName = fullPath[lastSlashIndex+1:]
+	// Extract the program name
+	programName := ""
+	if slashPos != -1 {
+		// If a slash is present get the substring after it
+		programName = args[slashPos+1:]
 	} else {
-		// No slash: use entire path
-		programName = fullPath
+		// If no slash is present use the entire path
+		programName = args
 	}
 
 	// Print each character of the program name
@@ -62,6 +63,6 @@ func main() {
 		z01.PrintRune(v)
 	}
 
-	// Print newline
+	// Print a newline
 	z01.PrintRune('\n')
 }
