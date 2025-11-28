@@ -8,9 +8,7 @@ Write a function that returns the concatenation of all the `string`s of a slice 
 
 ## Expected Function Signature
 ```go
-func Join(strs []string, sep string) string {
-
-}
+func Join(strs []string, sep string) string
 ```
 
 ## Expected Output

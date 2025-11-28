@@ -11,9 +11,7 @@ The function returns the index of the first occurrence of a substring in a strin
 ## Expected Function Signature
 
 ```go
-func Index(s string, toFind string) int {
-
-}
+func Index(s string, toFind string) int
 ```
 
 ## Expected Output

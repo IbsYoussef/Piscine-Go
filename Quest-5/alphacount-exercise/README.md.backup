@@ -11,9 +11,7 @@ The letters are from the Latin alphabet list only, any other characters, symbols
 ## Expected Function Signature
 
 ```go
-func AlphaCount(s string) int {
-
-}
+func AlphaCount(s string) int
 ```
 
 ## Expected Output

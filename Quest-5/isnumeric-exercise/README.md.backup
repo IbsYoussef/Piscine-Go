@@ -8,9 +8,7 @@ Write a function that returns `true` if the `string` passed as a parameter conta
 
 ## Expected Function Signature
 ```go
-func IsNumeric(s string) bool {
-
-}
+func IsNumeric(s string) bool
 ```
 
 ## Expected Output

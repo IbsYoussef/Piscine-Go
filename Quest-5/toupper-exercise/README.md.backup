@@ -10,9 +10,7 @@ The function should convert all lowercase letters (a-z) to uppercase (A-Z), whil
 
 ## Expected Function Signature
 ```go
-func ToUpper(s string) string {
-
-}
+func ToUpper(s string) string
 ```
 
 ## Expected Output

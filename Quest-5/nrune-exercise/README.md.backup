@@ -9,9 +9,7 @@ Write a function that returns the nth `rune` of a `string`. If not possible, it 
 ## Expected Function Signature
 
 ```go
-func NRune(s string, n int) rune {
-
-}
+func NRune(s string, n int) rune
 ```
 
 ## Expected Output

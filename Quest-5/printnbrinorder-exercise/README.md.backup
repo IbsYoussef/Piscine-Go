@@ -11,9 +11,7 @@ Conversion to `int64` is not allowed.
 
 ## Expected Function Signature
 ```go
-func PrintNbrInOrder(n int) {
-
-}
+func PrintNbrInOrder(n int)
 ```
 
 ## Expected Output

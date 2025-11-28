@@ -15,9 +15,7 @@ The function compares two strings lexicographically (alphabetically) and returns
 ## Expected Function Signature
 
 ```go
-func Compare(a, b string) int {
-
-}
+func Compare(a, b string) int
 ```
 
 ## Expected Output

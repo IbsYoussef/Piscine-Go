@@ -9,7 +9,9 @@ Write a function that takes arguments received in parameters and returns them as
 ## Expected Function Signature
 
 ```go
-func ConcatParams(args []string) string
+func ConcatParams(args []string) string {
+
+}
 ```
 
 ## Expected Output

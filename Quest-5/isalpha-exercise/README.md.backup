@@ -13,9 +13,7 @@ Alphanumerical characters include:
 
 ## Expected Function Signature
 ```go
-func IsAlpha(s string) bool {
-
-}
+func IsAlpha(s string) bool
 ```
 
 ## Expected Output

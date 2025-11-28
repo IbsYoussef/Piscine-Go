@@ -10,9 +10,7 @@ Printable characters are visible characters that can be displayed on screen, exc
 
 ## Expected Function Signature
 ```go
-func IsPrintable(s string) bool {
-
-}
+func IsPrintable(s string) bool
 ```
 
 ## Expected Output

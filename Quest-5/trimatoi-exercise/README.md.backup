@@ -14,9 +14,7 @@ Write a function that transforms numbers within a `string`, into an `int`.
 
 ## Expected Function Signature
 ```go
-func TrimAtoi(s string) int {
-
-}
+func TrimAtoi(s string) int
 ```
 
 ## Expected Output

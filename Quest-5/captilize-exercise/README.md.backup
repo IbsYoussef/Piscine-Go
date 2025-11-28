@@ -10,9 +10,7 @@ A word is a sequence of **alphanumeric** characters (letters and digits).
 
 ## Expected Function Signature
 ```go
-func Capitalize(s string) string {
-
-}
+func Capitalize(s string) string
 ```
 
 ## Expected Output

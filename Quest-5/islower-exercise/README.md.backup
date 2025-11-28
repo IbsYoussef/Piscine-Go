@@ -8,9 +8,7 @@ Write a function that returns `true` if the `string` passed as the parameter con
 
 ## Expected Function Signature
 ```go
-func IsLower(s string) bool {
-
-}
+func IsLower(s string) bool
 ```
 
 ## Expected Output

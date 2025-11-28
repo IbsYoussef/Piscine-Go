@@ -24,9 +24,7 @@ The function **does not have** to manage negative numbers.
 
 ## Expected Function Signature
 ```go
-func AtoiBase(s string, base string) int {
-
-}
+func AtoiBase(s string, base string) int
 ```
 
 ## Expected Output

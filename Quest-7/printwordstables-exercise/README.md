@@ -9,7 +9,9 @@ Write a function that receives a `string slice` and prints each element of the s
 ## Expected Function Signature
 
 ```go
-func PrintWordsTables(a []string)
+func PrintWordsTables(a []string) {
+
+}
 ```
 
 ## Expected Output

@@ -8,9 +8,7 @@ Write a function that returns `true` if the `string` passed as parameter contain
 
 ## Expected Function Signature
 ```go
-func IsUpper(s string) bool {
-
-}
+func IsUpper(s string) bool
 ```
 
 ## Expected Output

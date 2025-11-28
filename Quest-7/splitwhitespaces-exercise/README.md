@@ -11,7 +11,9 @@ The separators are spaces, tabs (`\t`), and newlines (`\n`).
 ## Expected Function Signature
 
 ```go
-func SplitWhiteSpaces(s string) []string
+func SplitWhiteSpaces(s string) []string {
+
+}
 ```
 
 ## Expected Output

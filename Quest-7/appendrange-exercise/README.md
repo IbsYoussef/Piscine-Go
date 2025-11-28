@@ -14,7 +14,9 @@ Write a function that takes an `int` min and an `int` max as parameters. The fun
 ## Expected Function Signature
 
 ```go
-func AppendRange(min, max int) []int
+func AppendRange(min, max int) []int {
+
+}
 ```
 
 ## Expected Output

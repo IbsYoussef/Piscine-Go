@@ -18,9 +18,7 @@ The function has to manage negative numbers.
 
 ## Expected Function Signature
 ```go
-func PrintNbrBase(nbr int, base string) {
-
-}
+func PrintNbrBase(nbr int, base string)
 ```
 
 ## Expected Output
