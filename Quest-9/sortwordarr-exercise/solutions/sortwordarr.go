@@ -12,6 +12,7 @@ package solutions
 //	Numbers (0-9) come before uppercase letters (A-Z)
 //	Uppercase letters come before lowercase letters (a-z)
 //	Example: "1" < "A" < "a"
+
 func SortWordArr(a []string) {
 	// Outer loop: controls number of passes
 	// Need len(a)-1 passes to ensure all elements are sorted
