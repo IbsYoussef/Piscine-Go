@@ -1,7 +1,5 @@
 # rot14
 
-**Status:** Required
-
 ## Problem Statement
 
 Write a function rot14 that returns the string within the parameter transformed into a rot14 string. Each letter will be replaced by the letter 14 spots ahead in the alphabetical order.
