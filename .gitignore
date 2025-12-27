@@ -1,5 +1,2 @@
 # Ignore VS code settings folder
 .vscode/
-
-# Ignore Test Folder
-/Test
