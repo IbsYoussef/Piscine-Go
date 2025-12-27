@@ -11,16 +11,16 @@ This repo documents my 3-week 01 Founders Piscine-Go journey—an intensive sele
 
 - [🏊 About Piscine-Go](#-about-piscine-go)
 - [📚 Learning Journey](#-learning-journey)
-  - [Week 1: Foundations](#week-1-foundations)
-  - [Week 2: Core Concepts](#week-2-core-concepts)
-  - [Week 3: Advanced Topics](#week-3-advanced-topics)
-  - [Hackathon: Challenge Mode](#hackathon-challenge-mode)
+  - [Week 1: Foundations 🌱](#week-1-foundations-)
+  - [Week 2: Core Concepts 🔧](#week-2-core-concepts-)
+  - [Week 3: Advanced Topics 🚀](#week-3-advanced-topics-)
+  - [Hackathon: Challenge Mode 🏆](#hackathon-challenge-mode-)
 - [🎯 Quest Overview](#-quest-overview)
 - [📁 Repository Structure](#-repository-structure)
 - [🚀 How to Use This Repository](#-how-to-use-this-repository)
-  - [Exploring Exercises](#exploring-exercises)
-  - [Writing Your Solutions](#writing-your-solutions)
-  - [Testing with Scripts](#testing-with-scripts)
+  - [Exploring Exercises 🔍](#exploring-exercises-)
+  - [Writing Your Solutions ✍️](#writing-your-solutions-️)
+  - [Testing with Scripts 🧪](#testing-with-scripts-)
 - [💡 Key Learnings](#-key-learnings)
 
 ---
